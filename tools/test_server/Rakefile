@@ -1,0 +1,44 @@
+require 'rake/clean'
+
+## RUN
+
+task :start => ['http:start', 'https:start']
+task :stop => ['http:stop', 'https:stop']
+task :restart => ['http:restart', 'https:restart']
+
+namespace :http do
+  task :start => [:build] do
+    sh 'thin -p38080 -d -P tmp/http.pid -l tmp/http.log start'
+  end
+  task :stop do
+    sh 'thin -P tmp/http.pid stop'
+  end
+  task :restart => [:stop, :start]
+end
+
+namespace :https do
+  task :start => [:build] do
+    sh 'thin -p38443 -d -P tmp/https.pid -l tmp/https.log --ssl --ssl-cert-file tmp/cert.pem --ssl-key-file tmp/key.pem --ssl-disable-verify start'
+  end
+  task :stop do
+    sh 'thin -P tmp/https.pid stop'
+  end
+  task :restart => [:stop, :start]
+end
+
+CLEAN.include('tmp/*.log')
+CLEAN.include('tmp/*.pid')
+
+## BUILD
+
+task :build => [:build_ssl]
+
+## BUILD SSL
+
+task :build_ssl => ['tmp/cert.pem']
+
+file 'tmp/cert.pem' do
+  sh 'openssl req -x509 -nodes -newkey rsa:2048 -keyout tmp/key.pem -out tmp/cert.pem -days XXX -subj "/CN=localhost"'
+end
+
+CLEAN.include('tmp/*.pem')
