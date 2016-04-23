@@ -35,3 +35,7 @@ jar {
 javadoc {
     classpath = sourceSets.main.compileClasspath
 }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.12'
+}
