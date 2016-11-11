@@ -99,9 +99,7 @@ javadoc {
 
 ## Contribution / Collaboration
 
-Please do not submit pull requests or issues at this time.
-
-For Q&A please use https://groups.google.com/d/forum/solid-tx
+For Q&A please use https://gitter.im/solid-tx/Lobby
 
 ## License
 
