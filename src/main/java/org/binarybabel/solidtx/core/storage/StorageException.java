@@ -7,14 +7,9 @@
  * @author BinaryBabel OSS (http://code.binbab.org)
  */
 
-package solidtxsample;
+package org.binarybabel.solidtx.core.storage;
 
-import org.binarybabel.solidtx.txo.TxBaseObject;
-import org.binarybabel.solidtx.txo.TxField;
+import org.binarybabel.solidtx.TxException;
 
-public class Thing extends TxBaseObject {
-
-    @TxField
-    public String name;
-
+public class StorageException extends TxException {
 }

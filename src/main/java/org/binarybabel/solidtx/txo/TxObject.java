@@ -7,14 +7,11 @@
  * @author BinaryBabel OSS (http://code.binbab.org)
  */
 
-package solidtxsample;
+package org.binarybabel.solidtx.txo;
 
-import org.binarybabel.solidtx.txo.TxBaseObject;
-import org.binarybabel.solidtx.txo.TxField;
+public interface TxObject {
 
-public class Thing extends TxBaseObject {
-
-    @TxField
-    public String name;
+    public Comparable getId();
+    public void setId(Comparable id);
 
 }

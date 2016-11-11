@@ -7,14 +7,12 @@
  * @author BinaryBabel OSS (http://code.binbab.org)
  */
 
-package solidtxsample;
+package org.binarybabel.solidtx.http;
 
-import org.binarybabel.solidtx.txo.TxBaseObject;
-import org.binarybabel.solidtx.txo.TxField;
+import java.net.URLConnection;
 
-public class Thing extends TxBaseObject {
+public interface HttpAuth {
 
-    @TxField
-    public String name;
+    public void applyAuthToConnection(URLConnection conn);
 
 }

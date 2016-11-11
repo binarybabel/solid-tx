@@ -1,8 +1,8 @@
 package solidtxsample;
 
-import org.binbab.solidtx.TxException;
-import org.binbab.solidtx.TxFn;
-import org.binbab.solidtx.TxStack;
+import org.binarybabel.solidtx.TxException;
+import org.binarybabel.solidtx.TxFn;
+import org.binarybabel.solidtx.TxStack;
 
 public class Main {
 

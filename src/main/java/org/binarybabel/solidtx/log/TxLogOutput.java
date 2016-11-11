@@ -7,14 +7,12 @@
  * @author BinaryBabel OSS (http://code.binbab.org)
  */
 
-package solidtxsample;
+package org.binarybabel.solidtx.log;
 
-import org.binarybabel.solidtx.txo.TxBaseObject;
-import org.binarybabel.solidtx.txo.TxField;
+import org.binarybabel.solidtx.TxLog;
 
-public class Thing extends TxBaseObject {
+public interface TxLogOutput {
 
-    @TxField
-    public String name;
+    void sendLine(TxLog.Level level, String output);
 
 }

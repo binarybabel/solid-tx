@@ -1,12 +1,11 @@
 package solidtxsample;
 
-import org.binbab.solidtx.TxStack;
-import org.binbab.solidtx.core.network.NetworkManager;
-import org.binbab.solidtx.core.storage.StorageManager;
-import org.binbab.solidtx.disk.FileStorageContainer;
-import org.binbab.solidtx.http.HttpGateway;
-import org.binbab.solidtx.json.JsonAdapter;
-import org.binbab.solidtx.nulled.NullStorageContainer;
+import org.binarybabel.solidtx.TxStack;
+import org.binarybabel.solidtx.core.network.NetworkManager;
+import org.binarybabel.solidtx.core.storage.StorageManager;
+import org.binarybabel.solidtx.disk.FileStorageContainer;
+import org.binarybabel.solidtx.http.HttpGateway;
+import org.binarybabel.solidtx.json.JsonAdapter;
 
 import java.net.MalformedURLException;
 import java.net.URL;

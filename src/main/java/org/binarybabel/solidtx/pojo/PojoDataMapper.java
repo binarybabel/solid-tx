@@ -7,14 +7,8 @@
  * @author BinaryBabel OSS (http://code.binbab.org)
  */
 
-package solidtxsample;
+package org.binarybabel.solidtx.pojo;
 
-import org.binarybabel.solidtx.txo.TxBaseObject;
-import org.binarybabel.solidtx.txo.TxField;
-
-public class Thing extends TxBaseObject {
-
-    @TxField
-    public String name;
+public class PojoDataMapper {
 
 }

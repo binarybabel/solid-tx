@@ -9,9 +9,8 @@
 
 package solidtxsample;
 
-import org.binbab.solidtx.txo.TxBaseObject;
-import org.binbab.solidtx.txo.TxField;
-import org.binbab.solidtx.txo.TxObject;
+import org.binarybabel.solidtx.txo.TxBaseObject;
+import org.binarybabel.solidtx.txo.TxField;
 
 public class Place extends TxBaseObject {
 

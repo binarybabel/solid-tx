@@ -58,12 +58,12 @@ medir -p embed/repo embed/java
 cd embed
 
 # From the embed directory...
-git submodule add https://github.com/org-binbab/solid-tx.git repo/solidtx
+git submodule add https://github.com/binarybabel/solid-tx.git repo/solidtx
 cp repo/solidtx/src/embed/* ./    # not recursively
   # this creates 'README.txt' and 'embed-tool.jar'
 
 # Embed into your namespace...
-java -jar embed-tool.jar solidtx org.binbab.solidtx YOUR_BASE_PACKAGE
+java -jar embed-tool.jar solidtx org.binarybabel.solidtx YOUR_BASE_PACKAGE
 ```
 
 For future updates simply `git pull` within the submodule and repeat the embed-tool.jar command.
