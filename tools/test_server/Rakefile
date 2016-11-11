@@ -38,7 +38,7 @@ task :build => [:build_ssl]
 task :build_ssl => ['tmp/cert.pem']
 
 file 'tmp/cert.pem' do
-  sh 'openssl req -x509 -nodes -newkey rsa:2048 -keyout tmp/key.pem -out tmp/cert.pem -days XXX -subj "/CN=localhost"'
+  sh 'mkdir -p tmp && openssl req -x509 -nodes -newkey rsa:2048 -keyout tmp/key.pem -out tmp/cert.pem -days XXX -subj "/CN=localhost"'
 end
 
 CLEAN.include('tmp/*.pem')
