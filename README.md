@@ -1,5 +1,8 @@
 # SolidTX - Network Data Object Stack
 
+[![Build Status](https://travis-ci.org/binarybabel/solid-tx.svg?branch=master)](https://travis-ci.org/binarybabel/solid-tx)
+[![Join the chat at https://gitter.im/solid-tx/Lobby](https://badges.gitter.im/solid-tx/Lobby.svg)](https://gitter.im/solid-tx/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Developed by BinaryBabel for the MinePass Network, and released open source for transparency and community benefit.
 
 SolidTX provides asynchronous bulk transfer of remote server data to/from Java objects,

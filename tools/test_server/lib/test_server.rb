@@ -1,4 +1,4 @@
-require 'Grape'
+require 'grape'
 
 class TestServer < Grape::API
 
