@@ -40,7 +40,7 @@ public class ParseException extends Exception {
 	}
 	
 	/**
-	 * @see JSONParser#getPosition()
+	 * @see org.binarybabel.solidtx.embed.json.parser.JSONParser#getPosition()
 	 * 
 	 * @return The character position (starting with 0) of the input where the error occurs.
 	 */
@@ -53,11 +53,11 @@ public class ParseException extends Exception {
 	}
 	
 	/**
-	 * @see Yytoken
+	 * @see org.binarybabel.solidtx.embed.json.parser.Yytoken
 	 * 
 	 * @return One of the following base on the value of errorType:
 	 * 		   	ERROR_UNEXPECTED_CHAR		java.lang.Character
-	 * 			ERROR_UNEXPECTED_TOKEN		org.binbab.solidtx.embed.json.parser.Yytoken
+	 * 			ERROR_UNEXPECTED_TOKEN		org.binarybabel.solidtx.embed.json.parser.Yytoken
 	 * 			ERROR_UNEXPECTED_EXCEPTION	java.lang.Exception
 	 */
 	public Object getUnexpectedObject() {

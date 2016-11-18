@@ -98,8 +98,8 @@ public class JSONParser {
 	 * @param in
      * @param containerFactory - Use this factory to createyour own JSON object and JSON array containers.
 	 * @return Instance of the following:
-	 *  org.binbab.solidtx.embed.json.JSONObject,
-	 * 	org.binbab.solidtx.embed.json.JSONArray,
+	 *  org.binarybabel.solidtx.embed.json.JSONObject,
+	 * 	org.binarybabel.solidtx.embed.json.JSONArray,
 	 * 	java.lang.String,
 	 * 	java.lang.Number,
 	 * 	java.lang.Boolean,
