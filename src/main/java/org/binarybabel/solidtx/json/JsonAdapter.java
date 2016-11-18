@@ -128,12 +128,18 @@ public class JsonAdapter implements NetworkAdapter, StorageAdapter, SD0A {
     }
 
     @Override
-    public void decodeDataStore(DataStore output, InputStream input) throws IOException, ParseException {
+    public void decodeDataStore(DataStore output, InputStream input) throws IOException {
         BufferedReader r = new BufferedReader(new InputStreamReader(input));
-        JSONObject root = (JSONObject) parser.parse(r);
-        r.close();
-        output.setAttributes((Map) root.get("attr"));
-        output.setMap((Map<String, Map<String, Map<String, Object>>>) root.get("data"));
+        JSONObject root = null;
+        try {
+            root = (JSONObject) parser.parse(r);
+            output.setAttributes((Map) root.get("attr"));
+            output.setMap((Map<String, Map<String, Map<String, Object>>>) root.get("data"));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        } finally {
+            r.close();
+        }
     }
 
 }
