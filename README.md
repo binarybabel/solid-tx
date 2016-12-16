@@ -1,7 +1,7 @@
 # SolidTX - Network Data Object Stack
 
 [![Build Status](https://travis-ci.org/binarybabel/solid-tx.svg?branch=master)](https://travis-ci.org/binarybabel/solid-tx)
-[![Join the chat at https://gitter.im/solid-tx/Lobby](https://badges.gitter.im/solid-tx/Lobby.svg)](https://gitter.im/solid-tx/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/binarybabel/solid-tx](https://badges.gitter.im/binarybabel/solid-tx.svg)](https://gitter.im/binarybabel/solid-tx?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Developed by BinaryBabel for the MinePass Network, and released open source for transparency and community benefit.
 
@@ -102,7 +102,7 @@ javadoc {
 
 ## Contribution / Collaboration
 
-For Q&A please use https://gitter.im/solid-tx/Lobby
+For Q&A please use https://gitter.im/binarybabel/solid-tx
 
 ## License
 
